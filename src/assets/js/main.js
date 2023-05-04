@@ -12,7 +12,7 @@ const header = {
     this.backdrop.style.opacity = "0";
   },
   showBackDrop: function () {
-    this.backdrop.style.maxHeight = "6.5rem";
+    this.backdrop.style.maxHeight = "20rem";
     this.backdrop.style.opacity = "1";
   },
 };
