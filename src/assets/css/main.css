@@ -42,10 +42,6 @@
   transform: scaleX(1);
   transform-origin: left center;
 }
-/* 
-.hamburger-menu {
-  transition: all 0.5s cubic-bezier(0.57, 0.75, 0.34, 0.26);
-} */
 
 .hamburger-menu a:hover {
   @apply opacity-50 transition-opacity duration-300;
@@ -133,4 +129,15 @@
 
 .scroll-down {
   @apply animate-scroll w-fit text-white absolute bottom-14 left-1/2 -translate-x-1/2;
+}
+
+/* modal */
+.modal {
+  transform: translate(0, -100%);
+  transform-origin: top center;
+}
+
+.modal-toggler:checked ~ .modal {
+  transform: translate(0, 0);
+  transform-origin: bottom center;
 }

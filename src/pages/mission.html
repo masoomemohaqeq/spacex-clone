@@ -155,7 +155,7 @@
     <!-- Main -->
     <main>
       <!-- Breadcrumb -->
-      <div class="container text-white text-sm pt-32 pb-6">
+      <div class="container text-white text-sm font-light pt-32 pb-6 lg:pb-0">
         <ul class="uppercase">
           <li>
             <a href="./index.html"
@@ -168,15 +168,44 @@
 
       <div class="container text-white">
         <div class="relative">
-          <img
-            class="w-full"
-            src="/src/assets/images/Starship_Flight_Test_007_Desktop_75a84279f5.jpg"
-            alt=""
+          <!-- Modal Toggler -->
+          <input
+            type="checkbox"
+            name="modal-toggler"
+            id="modal-toggler"
+            class="modal-toggler w-0 h-0 opacity-0"
           />
+
+          <!-- Image Cover -->
+          <label for="modal-toggler" class="cursor-pointer">
+            <img
+              class="w-full"
+              src="/src/assets/images/Starship_Flight_Test_007_Desktop_75a84279f5.jpg"
+              alt=""
+            />
+            <div
+              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl"
+            >
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </div>
+          </label>
+
+          <!-- Modal -->
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl"
+            class="modal bg-black fixed top-0 left-0 w-full h-full text-white z-[60] transition-transform delay-700 duration-500 ease-in-out"
           >
-            <i class="fa fa-play" aria-hidden="true"></i>
+            <label
+              for="modal-toggler"
+              class="absolute right-12 top-12 cursor-pointer"
+            >
+              <i class="fa-solid fa-xmark text-3xl"> </i
+            ></label>
+            <div class="box-border flex justify-center items-center p-16">
+              <video class="w-8/12" controls>
+                <source src="../assets/images/earth.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
         <div class="py-4">
@@ -184,35 +213,39 @@
           <h1 class="text-4xl font-bold my-5 uppercase">
             Starship Flight Test
           </h1>
-          <div class="text-lg my-12">
-            <p>
-              Starship gave us quite a show during today’s first flight test of
-              a fully integrated Starship and Super Heavy rocket from Starbase
-              in Texas.
-            </p>
-            <p>
-              At 8:33 a.m. CT, Starship successfully lifted off from the orbital
-              launch pad for the first time. The vehicle cleared the pad and
-              beach as Starship climbed to an apogee of ~39 km over the Gulf of
-              Mexico – the highest of any Starship to-date. The vehicle
-              experienced multiple engines out during the flight test, lost
-              altitude, and began to tumble. The flight termination system was
-              commanded on both the booster and ship. As is standard procedure,
-              the pad and surrounding area was cleared well in advance of the
-              test, and we expect the road and beach near the pad to remain
-              closed until tomorrow.
-            </p>
-            <p>
-              With a test like this, success comes from what we learn, and we
-              learned a tremendous amount about the vehicle and ground systems
-              today that will help us improve on future flights of Starship.
-            </p>
-            <p>
-              Thank you to our customers, Cameron County, and the wider
-              community for the continued support and encouragement. And
-              congratulations to the entire SpaceX team on an exciting first
-              flight test of Starship!
-            </p>
+          <div class="lg:flex gap-6 font-light my-12">
+            <div class="basis-1/2">
+              <p>
+                Starship gave us quite a show during today’s first flight test
+                of a fully integrated Starship and Super Heavy rocket from
+                Starbase in Texas.
+              </p>
+              <p>
+                At 8:33 a.m. CT, Starship successfully lifted off from the
+                orbital launch pad for the first time. The vehicle cleared the
+                pad and beach as Starship climbed to an apogee of ~39 km over
+                the Gulf of Mexico – the highest of any Starship to-date. The
+                vehicle experienced multiple engines out during the flight test,
+                lost altitude, and began to tumble. The flight termination
+                system was commanded on both the booster and ship. As is
+                standard procedure, the pad and surrounding area was cleared
+                well in advance of the test, and we expect the road and beach
+                near the pad to remain closed until tomorrow.
+              </p>
+            </div>
+            <div class="basis-1/2">
+              <p>
+                With a test like this, success comes from what we learn, and we
+                learned a tremendous amount about the vehicle and ground systems
+                today that will help us improve on future flights of Starship.
+              </p>
+              <p>
+                Thank you to our customers, Cameron County, and the wider
+                community for the continued support and encouragement. And
+                congratulations to the entire SpaceX team on an exciting first
+                flight test of Starship!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -224,7 +257,7 @@
     >
       <div class="text-white/70 text-center p-1">SpaceX © 2022</div>
       <ul
-        class="flex flex-wrap justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
+        class="flex flex-wrap justify-center md:justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
       >
         <li><a href="#">twitter</a></li>
         <li><a href="#">youtube</a></li>
