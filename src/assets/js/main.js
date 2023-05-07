@@ -49,3 +49,28 @@ window.onscroll = function (e) {
   //   }
   this.oldScroll = this.scrollY;
 };
+
+const modal = {
+  // modalTogglerEl: document.getElementById("modal-toggler"),
+  modalTogglerEls: document.getElementsByClassName("modal-toggler"),
+  modalEl: document.getElementById("modal"),
+  mainEl: document.getElementById("data-wrapper"),
+  show: function (e) {
+    // if (e.target.checked) {
+    //   this.mainEl.classList.add("move-up");
+    //   this.modalEl.classList.add("modal-shown");
+    // } else {
+    //   this.mainEl.classList.remove("move-up");
+    //   this.modalEl.classList.remove("modal-shown");
+    // }
+    document.getElementById("modal-content").classList.toggle("opacity-100");
+    this.mainEl.classList.toggle("move-up");
+    this.modalEl.classList.toggle("modal-shown");
+  },
+};
+
+[...modal.modalTogglerEls].forEach((el) => {
+  el.addEventListener("click", (e) => {
+    modal.show(e);
+  });
+});

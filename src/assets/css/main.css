@@ -1,11 +1,16 @@
-﻿@tailwind base;
+﻿@import "./navbar.css";
+@import "./home.css";
+@import "./mission.css";
+@import "./fonts.css";
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
     font-size: 12px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "NotoSans", sans-serif;
   }
   p {
     @apply mb-4;
@@ -13,131 +18,5 @@
 }
 
 .container {
-  @apply w-full mr-0 ml-auto lg:max-w-[1180px] xl:max-w-[1500px] 2xl:max-w-[1300px];
-}
-
-/* navbar */
-.header-menu a,
-.header-link a {
-  @apply relative;
-}
-
-.header-menu a::after,
-.header-link a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background: #fff;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transform-origin: right center;
-  transition: transform 0.4s;
-}
-
-.header-menu a:hover::after,
-.header-link a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left center;
-}
-
-.hamburger-menu a:hover {
-  @apply opacity-50 transition-opacity duration-300;
-}
-
-#hamburger:checked + label div:nth-child(1) {
-  transform: translate(0px, 4px) rotate(45deg);
-}
-
-#hamburger:checked + label div:nth-child(2) {
-  transition: all 300ms;
-  transform: translate(8px, 0px);
-  width: 0%;
-}
-
-#hamburger:checked + label div:nth-child(3) {
-  transform: translate(0px, -4px) rotate(-45deg);
-}
-
-#hamburger:checked ~ .transparent-layer {
-  visibility: visible;
-  opacity: 0.4;
-}
-
-#hamburger:checked ~ .hamburger-menu {
-  transform: translateX(0) skewX(0);
-}
-
-#hamburger:checked ~ .hamburger-menu > ul {
-  max-height: 100vh;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.hamburger-menu > ul {
-  @apply divide-y  divide-slate-300/25 max-h-0 translate-y-2 overflow-hidden opacity-30 transition-all delay-200 duration-1000 text-right uppercase text-white;
-}
-
-/* tiles */
-
-.tile {
-  @apply relative h-screen bg-no-repeat bg-center bg-cover;
-}
-
-.tile-content-wrapper {
-  @apply container relative h-screen;
-}
-
-.tile-content {
-  @apply absolute uppercase text-white md:w-1/2 lg:w-1/3 bottom-28 lg:bottom-36;
-}
-
-.tile-tag {
-  @apply text-lg;
-}
-
-.tile-title {
-  @apply text-[2.75rem] md:text-6xl font-bold my-0 lg:my-2;
-}
-
-.tile-button {
-  @apply inline-block font-semibold border-2 md:text-base lg:text-sm px-14 py-4 my-4 lg:my-6 relative;
-}
-
-.tile-button .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transition: transform 0.5s;
-  transform: scale3d(1, 0, 1);
-  transform-origin: top center;
-}
-
-.tile-button:hover .overlay {
-  transform: scale3d(1, 1, 1);
-  transform-origin: bottom center;
-}
-
-.tile-button:hover > span {
-  @apply text-black z-40 relative;
-}
-
-.scroll-down {
-  @apply animate-scroll w-fit text-white absolute bottom-14 left-1/2 -translate-x-1/2;
-}
-
-/* modal */
-.modal {
-  transform: translate(0, -100%);
-  transform-origin: top center;
-}
-
-.modal-toggler:checked ~ .modal {
-  transform: translate(0, 0);
-  transform-origin: bottom center;
+  @apply w-full mr-3 ml-auto lg:max-w-[1180px] xl:max-w-[1500px] 2xl:max-w-[1300px];
 }

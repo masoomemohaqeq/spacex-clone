@@ -7,12 +7,6 @@
     <link rel="icon" type="image/x-icon" href="/src/assets/favicon.jpg" />
     <title>SpaceX</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -22,253 +16,256 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body class="bg-black">
-    <header
-      id="header"
-      class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
+  <body class="bg-black overflow-x-hidden">
+    <div id="data-wrapper" class="translate-x-0 translate-y-0">
+      <header
+        id="header"
+        class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
+      >
+        <div
+          id="header-backdrop"
+          class="absolute inset-0 bg-black opacity-0 max-h-0 h-full w-full transition-all duration-300"
+        ></div>
+        <!-- Navbar -->
+        <div class="relative h-full lg:flex items-baseline container">
+          <!-- Logo -->
+          <a
+            href="./index.html"
+            class="absolute z-50 top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:inline-block"
+          >
+            <img
+              class="w-52 lg:w-60"
+              src="../assets/images/spacex-logo-black-and-white.png"
+              alt="logo"
+            />
+          </a>
+
+          <ul
+            class="header-menu hidden text-sm lg:flex ml-10 mr-auto lg:gap-4 text-white font-bold uppercase"
+          >
+            <li class="py-2">
+              <a href="#">Falcon 9</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Falcon Heavy</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Dragon</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starship</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Human Spaceflight</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Rideshare</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starshield</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starlink</a>
+            </li>
+          </ul>
+
+          <div
+            class="hidden header-link lg:block mr-6 text-sm text-white font-bold uppercase"
+          >
+            <a href="#">shop</a>
+          </div>
+
+          <!-- Hamburger -->
+          <div
+            class="absolute top-[0.45rem] right-6 cursor-pointer md:right-12 lg:static"
+          >
+            <input
+              type="checkbox"
+              class="w-0 h-0 opacity-0 absolute"
+              name="hamburger"
+              id="hamburger"
+            />
+            <label class="relative space-y-[2px] z-50" for="hamburger">
+              <div class="h-0 w-5 border-b-2 transition-all"></div>
+              <div class="h-0 w-5 border-b-2 xl:pt-[1px]"></div>
+              <div class="h-0 w-5 border-b-2 transition-all"></div>
+            </label>
+            <label
+              for="hamburger"
+              class="transparent-layer transition-all invisible bg-black opacity-0 fixed inset-0 z-20"
+            ></label>
+
+            <!-- Menu -->
+            <div
+              class="hamburger-menu md:px-12 lg:px-10 divide-y divide-slate-300/25 lg:divide-y-0 bg-black skew-x-3 transition-all ease-in-out duration-500 translate-x-[90vw] w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/4 md:text-lg h-screen p-5 fixed top-0 right-0 z-30"
+            >
+              <ul class="mt-14 lg:hidden">
+                <li class="py-2">
+                  <a href="#">Falcon 9</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Falcon Heavy</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Dragon</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starship</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Human Spaceflight</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Rideshare</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starshield</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starlink</a>
+                </li>
+              </ul>
+              <ul class="lg:mt-14">
+                <li class="py-2">
+                  <a href="#">Mission</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Launches</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">updates</a>
+                </li>
+                <li class="py-2 lg:hidden">
+                  <a href="#">shop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main id="main">
+        <!-- Breadcrumb -->
+        <div class="container text-white text-sm font-light pt-32 pb-6 lg:pb-2">
+          <ul class="uppercase">
+            <li>
+              <a href="./index.html"
+                ><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> back
+                to home</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="container text-white">
+          <div class="relative">
+            <!-- Image Cover -->
+            <div class="modal-toggler">
+              <img
+                class="w-full cursor-pointer"
+                src="/src/assets/images/Starship_Flight_Test_007_Desktop_75a84279f5.jpg"
+                alt=""
+              />
+              <div
+                class="cursor-pointer absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl"
+              >
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <!-- Modal Toggler -->
+            <!-- <input
+              type="checkbox"
+              name="modal-toggler"
+              id="modal-toggler"
+              class="modal-toggler w-0 h-0 opacity-0"
+            /> -->
+          </div>
+          <div class="py-4">
+            <div class="opacity-50 my-5 uppercase">april 20,2023</div>
+            <h1 class="text-4xl font-bold my-5 uppercase">
+              Starship Flight Test
+            </h1>
+            <div class="lg:flex gap-6 font-light my-12">
+              <div class="basis-1/2">
+                <p>
+                  Starship gave us quite a show during today’s first flight test
+                  of a fully integrated Starship and Super Heavy rocket from
+                  Starbase in Texas.
+                </p>
+                <p>
+                  At 8:33 a.m. CT, Starship successfully lifted off from the
+                  orbital launch pad for the first time. The vehicle cleared the
+                  pad and beach as Starship climbed to an apogee of ~39 km over
+                  the Gulf of Mexico – the highest of any Starship to-date. The
+                  vehicle experienced multiple engines out during the flight
+                  test, lost altitude, and began to tumble. The flight
+                  termination system was commanded on both the booster and ship.
+                  As is standard procedure, the pad and surrounding area was
+                  cleared well in advance of the test, and we expect the road
+                  and beach near the pad to remain closed until tomorrow.
+                </p>
+              </div>
+              <div class="basis-1/2">
+                <p>
+                  With a test like this, success comes from what we learn, and
+                  we learned a tremendous amount about the vehicle and ground
+                  systems today that will help us improve on future flights of
+                  Starship.
+                </p>
+                <p>
+                  Thank you to our customers, Cameron County, and the wider
+                  community for the continued support and encouragement. And
+                  congratulations to the entire SpaceX team on an exciting first
+                  flight test of Starship!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="uppercase px-1 py-10 text-sm lg:text-xs lg:flex lg:justify-center lg:items-center lg:space-x-6"
+      >
+        <div class="text-white/70 text-center p-1">SpaceX © 2022</div>
+        <ul
+          class="flex flex-wrap justify-center md:justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
+        >
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">youtube</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">flicker</a></li>
+          <li><a href="#">linkedin</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">sippliers</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div
+      id="modal"
+      class="modal bg-black fixed top-0 left-0 w-full h-full text-white z-[60] modal-show-animation flex justify-center items-center overflow-hidden"
     >
       <div
-        id="header-backdrop"
-        class="absolute inset-0 bg-black opacity-0 max-h-0 h-full w-full transition-all duration-300"
-      ></div>
-      <!-- Navbar -->
-      <div class="relative h-full lg:flex items-baseline container">
-        <!-- Logo -->
-        <a
-          href="./index.html"
-          class="absolute z-50 top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:inline-block"
-        >
-          <img
-            class="w-52 lg:w-60"
-            src="../assets/images/spacex-logo-black-and-white.png"
-            alt="logo"
-          />
-        </a>
-
-        <ul
-          class="header-menu hidden text-sm lg:flex ml-10 mr-auto lg:gap-4 text-white font-bold uppercase"
-        >
-          <li class="py-2">
-            <a href="#">Falcon 9</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Falcon Heavy</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Dragon</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starship</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Human Spaceflight</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Rideshare</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starshield</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starlink</a>
-          </li>
-        </ul>
-
-        <div
-          class="hidden header-link lg:block mr-6 text-sm text-white font-bold uppercase"
-        >
-          <a href="#">shop</a>
-        </div>
-
-        <!-- Hamburger -->
-        <div
-          class="absolute top-[0.45rem] right-6 md:right-12 cursor-pointer lg:static"
-        >
-          <input
-            type="checkbox"
-            class="w-0 h-0 opacity-0 absolute"
-            name="hamburger"
-            id="hamburger"
-          />
-          <label class="relative space-y-[2px] z-50" for="hamburger">
-            <div class="h-0 w-5 border-b-2 transition-all"></div>
-            <div class="h-0 w-5 border-b-2 xl:pt-[1px]"></div>
-            <div class="h-0 w-5 border-b-2 transition-all"></div>
-          </label>
-          <label
-            for="hamburger"
-            class="transparent-layer transition-all invisible bg-black opacity-0 fixed inset-0 z-20"
-          ></label>
-
-          <!-- Menu -->
-          <div
-            class="hamburger-menu md:px-12 lg:px-10 divide-y divide-slate-300/25 lg:divide-y-0 bg-black skew-x-3 transition-all ease-in-out duration-500 translate-x-[90vw] w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/4 md:text-lg h-screen p-5 fixed top-0 right-0 z-30"
-          >
-            <ul class="mt-14 lg:hidden">
-              <li class="py-2">
-                <a href="#">Falcon 9</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Falcon Heavy</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Dragon</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starship</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Human Spaceflight</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Rideshare</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starshield</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starlink</a>
-              </li>
-            </ul>
-            <ul class="lg:mt-14">
-              <li class="py-2">
-                <a href="#">Mission</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Launches</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Careers</a>
-              </li>
-              <li class="py-2">
-                <a href="#">updates</a>
-              </li>
-              <li class="py-2 lg:hidden">
-                <a href="#">shop</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <main>
-      <!-- Breadcrumb -->
-      <div class="container text-white text-sm font-light pt-32 pb-6 lg:pb-0">
-        <ul class="uppercase">
-          <li>
-            <a href="./index.html"
-              ><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> back
-              to home</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="container text-white">
-        <div class="relative">
-          <!-- Modal Toggler -->
-          <input
-            type="checkbox"
-            name="modal-toggler"
-            id="modal-toggler"
-            class="modal-toggler w-0 h-0 opacity-0"
-          />
-
-          <!-- Image Cover -->
-          <label for="modal-toggler" class="cursor-pointer">
-            <img
-              class="w-full"
-              src="/src/assets/images/Starship_Flight_Test_007_Desktop_75a84279f5.jpg"
-              alt=""
-            />
-            <div
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl"
-            >
-              <i class="fa fa-play" aria-hidden="true"></i>
-            </div>
-          </label>
-
-          <!-- Modal -->
-          <div
-            class="modal bg-black fixed top-0 left-0 w-full h-full text-white z-[60] transition-transform delay-700 duration-500 ease-in-out"
-          >
-            <label
-              for="modal-toggler"
-              class="absolute right-12 top-12 cursor-pointer"
-            >
-              <i class="fa-solid fa-xmark text-3xl"> </i
-            ></label>
-            <div class="box-border flex justify-center items-center p-16">
-              <video class="w-8/12" controls>
-                <source src="../assets/images/earth.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
-        <div class="py-4">
-          <div class="opacity-50 my-5 uppercase">april 20,2023</div>
-          <h1 class="text-4xl font-bold my-5 uppercase">
-            Starship Flight Test
-          </h1>
-          <div class="lg:flex gap-6 font-light my-12">
-            <div class="basis-1/2">
-              <p>
-                Starship gave us quite a show during today’s first flight test
-                of a fully integrated Starship and Super Heavy rocket from
-                Starbase in Texas.
-              </p>
-              <p>
-                At 8:33 a.m. CT, Starship successfully lifted off from the
-                orbital launch pad for the first time. The vehicle cleared the
-                pad and beach as Starship climbed to an apogee of ~39 km over
-                the Gulf of Mexico – the highest of any Starship to-date. The
-                vehicle experienced multiple engines out during the flight test,
-                lost altitude, and began to tumble. The flight termination
-                system was commanded on both the booster and ship. As is
-                standard procedure, the pad and surrounding area was cleared
-                well in advance of the test, and we expect the road and beach
-                near the pad to remain closed until tomorrow.
-              </p>
-            </div>
-            <div class="basis-1/2">
-              <p>
-                With a test like this, success comes from what we learn, and we
-                learned a tremendous amount about the vehicle and ground systems
-                today that will help us improve on future flights of Starship.
-              </p>
-              <p>
-                Thank you to our customers, Cameron County, and the wider
-                community for the continued support and encouragement. And
-                congratulations to the entire SpaceX team on an exciting first
-                flight test of Starship!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer
-      class="uppercase px-1 py-10 text-sm lg:text-xs lg:flex lg:justify-center lg:items-center lg:space-x-6"
-    >
-      <div class="text-white/70 text-center p-1">SpaceX © 2022</div>
-      <ul
-        class="flex flex-wrap justify-center md:justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
+        id="modal-content"
+        class="w-9/12 opacity-0 transition-all delay-[2000ms] duration-300"
       >
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">youtube</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">flicker</a></li>
-        <li><a href="#">linkedin</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">sippliers</a></li>
-      </ul>
-    </footer>
-
+        <div class="absolute right-12 top-12 cursor-pointer modal-toggler">
+          <i class="fa-solid fa-xmark text-3xl"> </i>
+        </div>
+        <video class="w-full" controls>
+          <source src="../assets/images/earth.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
     <script src="/src/assets/js/main.js"></script>
   </body>
 </html>

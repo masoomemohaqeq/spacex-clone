@@ -1,0 +1,63 @@
+/* navbar */
+.header-menu a,
+.header-link a {
+  @apply relative;
+}
+
+.header-menu a::after,
+.header-link a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: #fff;
+  border-radius: 5px;
+  transform: scale(0, 0);
+  transform-origin: right center;
+  transition: transform 0.4s;
+}
+
+.header-menu a:hover::after,
+.header-link a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left center;
+}
+
+.hamburger-menu a:hover {
+  @apply opacity-50 transition-opacity duration-300;
+}
+
+#hamburger:checked + label div:nth-child(1) {
+  transform: translate(0px, 4px) rotate(45deg);
+}
+
+#hamburger:checked + label div:nth-child(2) {
+  transition: all 300ms;
+  transform: translate(8px, 0px);
+  width: 0%;
+}
+
+#hamburger:checked + label div:nth-child(3) {
+  transform: translate(0px, -4px) rotate(-45deg);
+}
+
+#hamburger:checked ~ .transparent-layer {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+#hamburger:checked ~ .hamburger-menu {
+  transform: translateX(0) skewX(0);
+}
+
+#hamburger:checked ~ .hamburger-menu > ul {
+  max-height: 100vh;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hamburger-menu > ul {
+  @apply divide-y  divide-slate-300/25 max-h-0 translate-y-2 overflow-hidden opacity-30 transition-all delay-200 duration-1000 text-right uppercase text-white;
+}
