@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/x-icon" href="/src/assets/favicon.jpg" />
     <title>SpaceX</title>
 
@@ -11,13 +11,14 @@
     <link
       rel="stylesheet"
       href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      type="text/css"
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/dist/output.css" type="text/css" />
   </head>
   <body class="bg-black overflow-x-hidden">
-    <div id="data-wrapper" class="translate-x-0 translate-y-0">
+    <div id="data-wrapper">
       <header
         id="header"
         class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
@@ -251,7 +252,7 @@
     <!-- Modal -->
     <div
       id="modal"
-      class="modal bg-black fixed top-0 left-0 w-full h-full text-white z-[60] modal-show-animation flex justify-center items-center overflow-hidden"
+      class="modal bg-black fixed top-0 left-0 w-full h-full text-white z-[60] transition-transform delay-1000 duration-1000 ease-in-out flex justify-center items-center overflow-hidden"
     >
       <div
         id="modal-content"
@@ -260,7 +261,7 @@
         <div class="absolute right-12 top-12 cursor-pointer modal-toggler">
           <i class="fa-solid fa-xmark text-3xl"> </i>
         </div>
-        <video class="w-full" controls>
+        <video id="modal-player" class="w-full" controls>
           <source src="../assets/images/earth.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

@@ -53,21 +53,18 @@ window.onload = () => {
   };
 
   const modal = {
-    // modalTogglerEl: document.getElementById("modal-toggler"),
     modalTogglerEls: document.getElementsByClassName("modal-toggler"),
     modalEl: document.getElementById("modal"),
-    mainEl: document.getElementById("data-wrapper"),
+    modalContentEl: document.getElementById("modal-content"),
+    wrapper: document.getElementById("data-wrapper"),
+    player: document.getElementById("modal-player"),
     show: function (e) {
-      // if (e.target.checked) {
-      //   this.mainEl.classList.add("move-up");
-      //   this.modalEl.classList.add("modal-shown");
-      // } else {
-      //   this.mainEl.classList.remove("move-up");
-      //   this.modalEl.classList.remove("modal-shown");
-      // }
-      document.getElementById("modal-content").classList.toggle("opacity-100");
-      this.mainEl.classList.toggle("move-up");
+      this.modalContentEl.classList.toggle("opacity-100");
+      this.wrapper.classList.toggle("move-up");
       this.modalEl.classList.toggle("modal-shown");
+
+      this.player.pause();
+      this.player.currentTime = 0;
     },
   };
 

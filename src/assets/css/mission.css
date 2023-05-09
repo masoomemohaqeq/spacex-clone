@@ -12,7 +12,3 @@
 .move-up {
   @apply transition-transform -translate-y-full translate-x-0  ease-in-out delay-1000 duration-[2000ms];
 }
-
-.modal-show-animation {
-  @apply transition-transform delay-1000 duration-1000 ease-in-out;
-}
