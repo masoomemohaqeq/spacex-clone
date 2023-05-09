@@ -340,7 +340,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Thin.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Thin.ttf");
 
   font-weight: 100;
 }
@@ -348,7 +348,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-ExtraLight.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-ExtraLight.ttf");
 
   font-weight: 200;
 }
@@ -356,7 +356,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Light.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Light.ttf");
 
   font-weight: 300;
 }
@@ -364,7 +364,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Regular.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Regular.ttf");
 
   font-weight: 400;
 }
@@ -372,7 +372,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Medium.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Medium.ttf");
 
   font-weight: 500;
 }
@@ -380,7 +380,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-SemiBold.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-SemiBold.ttf");
 
   font-weight: 600;
 }
@@ -388,7 +388,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Bold.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Bold.ttf");
 
   font-weight: 700;
 }
@@ -396,7 +396,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-ExtraBold.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-ExtraBold.ttf");
 
   font-weight: 800;
 }
@@ -404,7 +404,7 @@
 @font-face {
   font-family: NotoSans;
 
-  src: url("../fonts/Noto_Sans/NotoSans-Black.ttf");
+  src: url("/src/assets/fonts/Noto_Sans/NotoSans-Black.ttf");
 
   font-weight: 900;
 }
@@ -1182,6 +1182,10 @@ p {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -1196,10 +1200,6 @@ p {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .gap-3 {
@@ -1247,32 +1247,12 @@ p {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\/src\/assets\/images\/Homepage_Starlink_SLC_40_Mobile_ae06b8de1c\.jpg\'\)\] {
-  background-image: url('/src/assets/images/Homepage_Starlink_SLC_40_Mobile_ae06b8de1c.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/STARSHIP_Testflight_MOBILE_3be065456e\.jpg\'\)\] {
-  background-image: url('/src/assets/images/STARSHIP_Testflight_MOBILE_3be065456e.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/Via_Sat_3_outside39mound_DSC_5674_1_mobile_8d7eaca692\.jpg\'\)\] {
-  background-image: url('/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_mobile_8d7eaca692.jpg');
-}
-
-.bg-\[url\(\'\/src\/assets\/images\/homepage_1054_1_mobile_cad99a6947\.jpg\'\)\] {
-  background-image: url('/src/assets/images/homepage_1054_1_mobile_cad99a6947.jpg');
-}
-
 .p-1 {
   padding: 0.25rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-1 {
@@ -1313,11 +1293,6 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1512,22 +1487,6 @@ p {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/images\/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd\.jpg\'\)\] {
-    background-image: url('/src/assets/images/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/images\/STARSHIP_Testflight_DESKTOP_2b3bea613a\.jpg\'\)\] {
-    background-image: url('/src/assets/images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/images\/Via_Sat_3_outside39mound_DSC_5674_1_desktop_1843517ce0\.jpg\'\)\] {
-    background-image: url('/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_desktop_1843517ce0.jpg');
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/images\/homepage_1054_desktop_a52a06e9f7\.jpg\'\)\] {
-    background-image: url('/src/assets/images/homepage_1054_desktop_a52a06e9f7.jpg');
   }
 
   .lg\:px-1 {

@@ -17,238 +17,248 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
   <body class="bg-black overflow-x-hidden">
-    <header
-      id="header"
-      class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
-    >
-      <div
-        id="header-backdrop"
-        class="absolute inset-0 bg-black opacity-0 max-h-0 h-full w-full transition-all duration-300"
-      ></div>
-      <!-- Navbar -->
-      <div class="relative h-full lg:flex items-baseline container">
-        <!-- Logo -->
-        <a
-          href="./index.html"
-          class="absolute z-50 top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:inline-block"
-        >
-          <img
-            class="w-52 lg:w-60"
-            src="/src/assets/images/spacex-logo-black-and-white.png"
-            alt="logo"
-          />
-        </a>
-
-        <ul
-          class="header-menu hidden text-sm lg:flex ml-10 mr-auto lg:gap-4 text-white font-bold uppercase"
-        >
-          <li class="py-2">
-            <a href="#">Falcon 9</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Falcon Heavy</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Dragon</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starship</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Human Spaceflight</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Rideshare</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starshield</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Starlink</a>
-          </li>
-        </ul>
-
+    <div id="data-wrapper">
+      <header
+        id="header"
+        class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
+      >
         <div
-          class="hidden header-link lg:block mr-6 text-sm text-white font-bold uppercase"
-        >
-          <a href="#">shop</a>
-        </div>
-
-        <!-- Hamburger -->
-        <div
-          class="absolute top-[0.45rem] right-6 md:right-12 cursor-pointer lg:static"
-        >
-          <input
-            type="checkbox"
-            class="w-0 h-0 opacity-0 absolute"
-            name="hamburger"
-            id="hamburger"
-          />
-          <label class="relative space-y-[2px] z-50" for="hamburger">
-            <div class="h-0 w-5 border-b-2 transition-all"></div>
-            <div class="h-0 w-5 border-b-2 xl:pt-[1px]"></div>
-            <div class="h-0 w-5 border-b-2 transition-all"></div>
-          </label>
-          <label
-            for="hamburger"
-            class="transparent-layer transition-all invisible bg-black opacity-0 fixed inset-0 z-20"
-          ></label>
+          id="header-backdrop"
+          class="absolute inset-0 bg-black opacity-0 max-h-0 h-full w-full transition-all duration-300"
+        ></div>
+        <!-- Navbar -->
+        <div class="relative h-full lg:flex items-baseline container">
+          <!-- Logo -->
+          <a
+            href="./index.html"
+            class="absolute z-50 top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:inline-block"
+          >
+            <img
+              class="w-52 lg:w-60"
+              src="/src/assets/images/spacex-logo-black-and-white.png"
+              alt="logo"
+            />
+          </a>
 
           <!-- Menu -->
-          <div
-            class="hamburger-menu md:px-12 lg:px-10 divide-y divide-slate-300/25 lg:divide-y-0 bg-black skew-x-3 transition-all ease-in-out duration-500 translate-x-[90vw] w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/4 md:text-lg h-screen p-8 fixed top-0 right-0 z-30"
+          <ul
+            class="header-menu hidden text-sm lg:flex ml-10 mr-auto lg:gap-4 text-white font-bold uppercase"
           >
-            <ul class="mt-14 lg:hidden">
-              <li class="py-2">
-                <a href="#">Falcon 9</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Falcon Heavy</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Dragon</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starship</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Human Spaceflight</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Rideshare</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starshield</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Starlink</a>
-              </li>
-            </ul>
-            <ul class="lg:mt-14">
-              <li class="py-2">
-                <a href="#">Mission</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Launches</a>
-              </li>
-              <li class="py-2">
-                <a href="#">Careers</a>
-              </li>
-              <li class="py-2">
-                <a href="#">updates</a>
-              </li>
-              <li class="py-2 lg:hidden">
-                <a href="#">shop</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+            <li class="py-2">
+              <a href="#">Falcon 9</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Falcon Heavy</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Dragon</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starship</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Human Spaceflight</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Rideshare</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starshield</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Starlink</a>
+            </li>
+          </ul>
 
-    <!-- Main -->
-    <main>
-      <!-- Tiles -->
-      <div>
-        <!-- Tile #1 -->
-        <div
-          class="tile bg-[url('/src/assets/images/STARSHIP_Testflight_MOBILE_3be065456e.jpg')] lg:bg-[url('/src/assets/images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg')]"
-        >
-          <div class="tile-content-wrapper">
-            <div class="tile-content">
-              <h4 class="tile-tag">RECENT</h4>
-              <h1 class="tile-title">STARSHIP FLIGHT TEST</h1>
-              <a href="/src/pages/mission.html" class="tile-button">
-                <div class="overlay"></div>
-                <span>ReWatch</span>
-              </a>
+          <div
+            class="hidden header-link lg:block mr-6 text-sm text-white font-bold uppercase"
+          >
+            <a href="#">shop</a>
+          </div>
+
+          <!-- Hamburger -->
+          <div
+            class="absolute top-[0.45rem] right-6 md:right-12 cursor-pointer lg:static"
+          >
+            <input
+              type="checkbox"
+              class="w-0 h-0 opacity-0 absolute"
+              name="hamburger"
+              id="hamburger"
+            />
+            <label class="relative space-y-[2px] z-50" for="hamburger">
+              <div class="h-0 w-5 border-b-2 transition-all"></div>
+              <div class="h-0 w-5 border-b-2 xl:pt-[1px]"></div>
+              <div class="h-0 w-5 border-b-2 transition-all"></div>
+            </label>
+            <label
+              for="hamburger"
+              class="transparent-layer transition-all invisible bg-black opacity-0 fixed inset-0 z-20"
+            ></label>
+
+            <!-- Menu -->
+            <div
+              class="hamburger-menu md:px-12 lg:px-10 divide-y divide-slate-300/25 lg:divide-y-0 bg-black skew-x-3 transition-all ease-in-out duration-500 translate-x-[90vw] w-3/4 md:w-2/5 lg:w-2/5 xl:w-1/4 md:text-lg h-screen p-5 fixed top-0 right-0 z-30"
+            >
+              <ul class="mt-14 lg:hidden">
+                <li class="py-2">
+                  <a href="#">Falcon 9</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Falcon Heavy</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Dragon</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starship</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Human Spaceflight</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Rideshare</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starshield</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Starlink</a>
+                </li>
+              </ul>
+              <ul class="lg:mt-14">
+                <li class="py-2">
+                  <a href="#">Mission</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Launches</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Careers</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">updates</a>
+                </li>
+                <li class="py-2 lg:hidden">
+                  <a href="#">shop</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="scroll-down">
-            <i class="fa-solid fa-chevron-down text-2xl"></i>
-          </div>
         </div>
+      </header>
 
-        <!-- Tile #2 -->
-        <div
-          class="tile bg-[url('/src/assets/images/Homepage_Starlink_SLC_40_Mobile_ae06b8de1c.jpg')] lg:bg-[url('/src/assets/images/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd.jpg')]"
-        >
-          <div class="tile-content-wrapper">
-            <div class="tile-content">
-              <h4 class="tile-tag">Upcoming Launch</h4>
-              <h1 class="tile-title">STARLINK MISSION</h1>
-              <a href="/src/pages/mission.html" class="tile-button"
-                ><div class="overlay"></div>
-                <span>Watch</span></a
-              >
+      <!-- Main -->
+      <main>
+        <!-- Tiles -->
+        <div>
+          <!-- Tile #1 -->
+          <div
+            data-img-src="/src/assets/images/STARSHIP_Testflight_MOBILE_3be065456e.jpg"
+            data-img-lgsrc="/src/assets/images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg"
+            class="tile"
+          >
+            <div class="tile-content-wrapper">
+              <div class="tile-content">
+                <h4 class="tile-tag">RECENT</h4>
+                <h1 class="tile-title">STARSHIP FLIGHT TEST</h1>
+                <a href="/src/pages/mission.html" class="tile-button">
+                  <div class="overlay"></div>
+                  <span>ReWatch</span>
+                </a>
+              </div>
+            </div>
+            <div class="scroll-down">
+              <i class="fa-solid fa-chevron-down text-2xl"></i>
             </div>
           </div>
 
-          <div class="scroll-down">
-            <i class="fa-solid fa-chevron-down text-2xl"></i>
-          </div>
-        </div>
+          <!-- Tile #2 -->
+          <div
+            data-img-src="/src/assets/images/Homepage_Starlink_SLC_40_Mobile_ae06b8de1c.jpg"
+            data-img-lgsrc="/src/assets/images/Homepage_Starlink_SLC_40_Desktop_cac54ee8bd.jpg"
+            class="tile"
+          >
+            <div class="tile-content-wrapper">
+              <div class="tile-content">
+                <h4 class="tile-tag">Upcoming Launch</h4>
+                <h1 class="tile-title">STARLINK MISSION</h1>
+                <a href="/src/pages/mission.html" class="tile-button"
+                  ><div class="overlay"></div>
+                  <span>Watch</span></a
+                >
+              </div>
+            </div>
 
-        <!-- Tile #3 -->
-        <div
-          class="tile bg-[url('/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_mobile_8d7eaca692.jpg')] lg:bg-[url('/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_desktop_1843517ce0.jpg')]"
-        >
-          <div class="tile-content-wrapper">
-            <div class="tile-content">
-              <h4 class="tile-tag">Recent Launch</h4>
-              <h1 class="tile-title">ViaSat-3 Americas Mission</h1>
-              <a href="/src/pages/mission.html" class="tile-button"
-                ><div class="overlay"></div>
-                <span>ReWatch</span></a
-              >
+            <div class="scroll-down">
+              <i class="fa-solid fa-chevron-down text-2xl"></i>
             </div>
           </div>
 
-          <div class="scroll-down">
-            <i class="fa-solid fa-chevron-down text-2xl"></i>
-          </div>
-        </div>
+          <!-- Tile #3 -->
+          <div
+            data-img-src="/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_mobile_8d7eaca692.jpg"
+            data-img-lgsrc="/src/assets/images/Via_Sat_3_outside39mound_DSC_5674_1_desktop_1843517ce0.jpg"
+            class="tile"
+          >
+            <div class="tile-content-wrapper">
+              <div class="tile-content">
+                <h4 class="tile-tag">Recent Launch</h4>
+                <h1 class="tile-title">ViaSat-3 Americas Mission</h1>
+                <a href="/src/pages/mission.html" class="tile-button"
+                  ><div class="overlay"></div>
+                  <span>ReWatch</span></a
+                >
+              </div>
+            </div>
 
-        <!-- Tile #4 -->
-        <div
-          class="tile bg-[url('/src/assets/images/homepage_1054_1_mobile_cad99a6947.jpg')] lg:bg-[url('/src/assets/images/homepage_1054_desktop_a52a06e9f7.jpg')]"
-        >
-          <div class="tile-content-wrapper">
-            <div class="tile-content">
-              <h4 class="tile-tag">Recent Launch</h4>
-              <h1 class="tile-title">SES O3b mPOWER Mission</h1>
-              <a href="/src/pages/mission.html" class="tile-button"
-                ><div class="overlay"></div>
-                <span>ReWatch</span></a
-              >
+            <div class="scroll-down">
+              <i class="fa-solid fa-chevron-down text-2xl"></i>
             </div>
           </div>
 
-          <div class="scroll-down">
-            <i class="fa-solid fa-chevron-down text-2xl"></i>
+          <!-- Tile #4 -->
+          <div
+            data-img-src="/src/assets/images/homepage_1054_1_mobile_cad99a6947.jpg"
+            data-img-lgsrc="/src/assets/images/homepage_1054_desktop_a52a06e9f7.jpg"
+            class="tile"
+          >
+            <div class="tile-content-wrapper">
+              <div class="tile-content">
+                <h4 class="tile-tag">Recent Launch</h4>
+                <h1 class="tile-title">SES O3b mPOWER Mission</h1>
+                <a href="/src/pages/mission.html" class="tile-button"
+                  ><div class="overlay"></div>
+                  <span>ReWatch</span></a
+                >
+              </div>
+            </div>
+
+            <div class="scroll-down">
+              <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer
-      class="uppercase px-1 py-10 text-sm lg:text-xs lg:flex lg:justify-center lg:items-center lg:space-x-6"
-    >
-      <div class="text-white/70 text-center p-1">SpaceX © 2022</div>
-      <ul
-        class="flex flex-wrap justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
+      <!-- Footer -->
+      <footer
+        class="uppercase px-1 py-10 text-sm lg:text-xs lg:flex lg:justify-center lg:items-center lg:space-x-6"
       >
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">youtube</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">flicker</a></li>
-        <li><a href="#">linkedin</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">sippliers</a></li>
-      </ul>
-    </footer>
-
+        <div class="text-white/70 text-center p-1">SpaceX © 2022</div>
+        <ul
+          class="flex flex-wrap justify-center md:justify-between gap-3 lg:gap-6 text-white font-bold md:px-11 lg:px-1"
+        >
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">youtube</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">flicker</a></li>
+          <li><a href="#">linkedin</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">sippliers</a></li>
+        </ul>
+      </footer>
+    </div>
     <script src="/src/assets/js/main.js"></script>
   </body>
 </html>
