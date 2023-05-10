@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="/dist/output.css" type="text/css" />
   </head>
   <body class="bg-black overflow-x-hidden">
-    <div id="data-wrapper">
+    <div
+      id="data-wrapper"
+      class="transition-transform origin-bottom ease-in-out delay-1000 duration-[2000ms]"
+    >
       <header
         id="header"
         class="bg-transparent pt-8 pb-16 lg:py-8 fixed w-full z-10"
@@ -31,12 +34,12 @@
         <div class="relative h-full lg:flex items-baseline container">
           <!-- Logo -->
           <a
-            href="./index.html"
+            href="/index.html"
             class="absolute z-50 top-0 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:static lg:inline-block"
           >
             <img
               class="w-52 lg:w-60"
-              src="../assets/images/spacex-logo-black-and-white.png"
+              src="/src/assets/images/spacex-logo-black-and-white.png"
               alt="logo"
             />
           </a>
@@ -87,9 +90,9 @@
               id="hamburger"
             />
             <label class="relative space-y-[2px] z-50" for="hamburger">
-              <div class="h-0 w-5 border-b-2 transition-all"></div>
+              <div class="h-0 w-5 border-b-2 transition-transform"></div>
               <div class="h-0 w-5 border-b-2 xl:pt-[1px]"></div>
-              <div class="h-0 w-5 border-b-2 transition-all"></div>
+              <div class="h-0 w-5 border-b-2 transition-transform"></div>
             </label>
             <label
               for="hamburger"
@@ -267,6 +270,6 @@
         </video>
       </div>
     </div>
-    <script src="src/assets/js/main.js"></script>
+    <script src="/src/assets/js/main.js"></script>
   </body>
 </html>

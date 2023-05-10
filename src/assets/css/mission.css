@@ -10,5 +10,5 @@
 }
 
 .move-up {
-  @apply transition-transform -translate-y-full translate-x-0  ease-in-out delay-1000 duration-[2000ms];
+  @apply origin-top  -translate-y-full translate-x-0;
 }
